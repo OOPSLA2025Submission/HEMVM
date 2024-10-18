@@ -1,0 +1,32 @@
+[package]
+description = "Conflux core state library"
+homepage = "https://www.confluxnetwork.org"
+license = "GPL-3.0"
+name = "cfx-state"
+version = "1.0.0"
+edition = "2018"
+
+[dependencies]
+cfx-internal-common = { workspace = true }
+
+cfx-parameters = { workspace = true }
+cfx-storage = { workspace = true }
+cfx-statedb = { workspace = true }
+cfx-types = { workspace = true }
+parking_lot = "0.11"
+primitives = { workspace = true, optional = true}
+# TODO: update all rlp version.
+rlp = "^0.5"
+keccak-hash = "0.10"
+move-core-types = { workspace = true }
+
+[dev-dependencies]
+primitives = { workspace = true, features = ["test_no_account_length_check"] }
+
+[features]
+default = ["primitives"]
+# Unfortunately cfg test attributes doesn't work across crates,
+# we have to define a feature for test code.
+# https://users.rust-lang.org/t/cfg-test-doesnt-propagate-to-external-crates/13046
+testonly_code = []
+new_state_impl = []

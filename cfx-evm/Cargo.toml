@@ -1,0 +1,44 @@
+[package]
+name = "cfx-evm"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cfx-bytes = { workspace = true }
+cfx-types = { workspace = true }
+cfx-parameters = { workspace = true }
+cfxkey = { workspace = true }
+solidity-abi = { workspace = true }
+solidity-abi-derive = { workspace = true }
+memory-cache = { workspace = true }
+primitives = { workspace = true }
+sha3-macro = { workspace = true }
+malloc_size_of = {workspace = true }
+malloc_size_of_derive = {workspace = true }
+cfx-internal-common = { workspace = true }
+
+cfx-statedb = { workspace = true }
+cfx-state = { workspace = true }
+cfx-storage = { workspace = true }
+
+substrate-bn = { git = "https://github.com/paritytech/bn", default-features = false, rev="63f8c587356a67b33c7396af98e065b66fca5dda" }
+byteorder = "1.0"
+num = "0.2"
+parity-crypto = "0.9.0"
+lazy_static = "1.4"
+keccak-hash = "0.10"
+bit-set = "0.4"
+log = "0.4"
+rlp = "^0.5"
+rlp_derive = { git = "https://github.com/Conflux-Chain/conflux-parity-deps.git", rev = "1597a9cab02343eb2322ca0ac58d39b64e3f42d1"  }
+parking_lot = "0.11"
+strum_macros = "0.20"
+serde = { version = "1.0", features = ["rc"] }
+serde_derive = "1.0"
+error-chain = { version = "0.12", default-features = false }
+rustc-hex = "2.1"
+hex = "0.4"
+bcs = "0.1"
+move-core-types = { workspace = true }
