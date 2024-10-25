@@ -36,8 +36,6 @@ Account `0x14Dcb427A216216791fB63973c5b13878de30916` (private key `fafafafafafaf
 
 * [Guide](https://support.metamask.io/managing-my-wallet/accounts-and-addresses/how-to-import-an-account/#importing-using-a-private-key) on how to add an account using a private key to Metamask.
 
-* [Guide](https://petra.app/docs/use#import-an-existing-account) on how to add an account using a private key to Petra Wallet.
-
 Once the client is running, run the follwing command once to set up your profile:
 
 `aptos init` - to set up the CLI (run this only the first time after you have installed the Aptos CLI, choose options `local` and put `0x86b94222e0e35d40f8c54f398dce41f89203708ffc18fbc0e3cf0edbf75b00c3` private key once asked - you can put your own private key as well)
@@ -51,6 +49,7 @@ In order to fund an Aptos account, execute the following command in your termina
 <img width="66%" src="./.assets/network_params_metamask.png" alt="Network parameters for Metamask" />
 
 After you have set up the network, you should expect the following balance in your ETH account that you have imported:
+
 <img width="66%" src="./.assets/balance_to_expect.png" alt="Metamask Balance" />
 
 If there are any issues with connectivity/balance, try restarting your browser. Metamask tries to connect to the network when the browser starts, and there could be issues if the client starts after you have opened the browser.
